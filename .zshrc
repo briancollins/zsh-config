@@ -49,3 +49,13 @@ setopt hist_no_functions
 setopt no_hist_beep
 setopt hist_save_no_dups
 
+function socks_on() {
+  ssh -D 1080 -Nf -S ~/.ssh/proxy.ctl brisy.info proxy 
+  sudo networksetup -setsocksfirewallproxy AirPort 127.0.0.1 1080 off
+}
+
+function socks_off() {
+  ssh -S ~/.ssh/proxy.ctl -O exit proxy
+  sudo networksetup -setsocksfirewallproxystate AirPort off
+}
+
