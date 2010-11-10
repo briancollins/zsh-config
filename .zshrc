@@ -10,6 +10,7 @@ alias gpom="git pull origin master"
 alias gm="git merge"
 alias apinfo='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+alias mate='mvim'
 
 autoload -U colors
 colors
