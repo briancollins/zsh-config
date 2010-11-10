@@ -31,7 +31,7 @@ bindkey -e
 setopt incappendhistory prompt_subst
 
 # rvm
-if [[ -s /Users/brian/.rvm/scripts/rvm ]] ; then source /Users/brian/.rvm/scripts/rvm ; fi
+if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 
 # history saving
 HISTSIZE=100000
