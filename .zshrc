@@ -1,6 +1,13 @@
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin/:$PATH
+export CLASSPATH=/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 
 export EDITOR=vim
+export VMAIL_VIM=mvim
+
+alias love="/Applications/love.app/Contents/MacOS/love"
 
 # misc
 alias m.="mvim ."
@@ -25,13 +32,10 @@ alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 autoload -Uz compinit
 compinit
 
-# emacs key bindings
+# vim key bindings
 bindkey -e
 
 setopt incappendhistory prompt_subst
-
-# rvm
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 
 # history saving
 HISTSIZE=100000
