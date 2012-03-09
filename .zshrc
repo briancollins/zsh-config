@@ -1,8 +1,11 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin/:$PATH
-export CLASSPATH=/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+export CLASSPATH=/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar:.
 export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+export EC2_KEY="~/.ec2/qwiqq-us-west.pem"
+export NODE_PATH=/usr/local/lib/node_modules
+export CCPATH=/usr/local/Cellar/closure-compiler/20110615/libexec/compiler.jar
 
 export EDITOR=vim
 export VMAIL_VIM=mvim
